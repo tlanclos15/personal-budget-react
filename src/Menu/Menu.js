@@ -8,7 +8,7 @@ import {
 
 function Menu() {
   return (
-    <nav>
+    <nav >
         <ul>
             <li><Link to="/HomePage">Home</Link></li>
             <li><Link to="/AboutPage">About</Link></li>
