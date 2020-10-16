@@ -1,7 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 //import './index.css';
+
 
 import {
   BrowserRouter as Router,
@@ -16,8 +17,12 @@ import Footer from './Footer/Footer'
 import AboutPage from './AboutPage/AboutPage';
 import LoginPage from './LoginPage/LoginPage';
 import SignUpPage from './SignUpPage/SignUpPage';
+import Component from './Component/Chart';
 
-function App() {
+function App(props) {
+
+
+  
   return (
     <Router>
       <Menu/>
@@ -41,9 +46,15 @@ function App() {
           </Route>
         </Switch>
       </div> 
+      <Component/>
       <Footer/>
     </Router>
   );
 }
+
+
+
+
+
 
 export default App;
